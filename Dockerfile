@@ -2,5 +2,6 @@
 
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
 WORKDIR /app
-COPY ..
+COPY . .
+EXPOSE 80
 ENTRYPOINT ["dotnet", "test123.dll"]
